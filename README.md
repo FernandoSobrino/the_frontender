@@ -1,6 +1,6 @@
 # The Frontender
-Pequeño proyecto página web "The Frontender" realizado durante
-el curso de HTML y CSS, impartido por Tony G. Bolaño.
+Pequeño proyecto página web **The Frontender** realizado durante
+el curso de `HTML y CSS`, impartido por **Tony G. Bolaño**.
 
 
 **The Frontender** es el nuevo juego creado por *KeepGaming* en el que una
