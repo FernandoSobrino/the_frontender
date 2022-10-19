@@ -23,11 +23,24 @@ a {
     text-decoration: none;
 }
 
-.logo, .logo span {
-    font-family: 'Gugi', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.logo,
+.logo span {
+    font-family: 'Gugi', Impact, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
 }
 
 .logo span {
     color: #d65a31
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.xl {
+    font-size: 1.5rem;
 }
