@@ -8,18 +8,18 @@ input[type="email"] {
     width: 100%;
     padding: .25rem;
     font-size: 1.25rem;
-    background-color: #000033;
-    color: #eeeeee;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     border: 0;
-    border-bottom: solid 1px #eeeeee;
+    border-bottom: solid 1px var(--light-color);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
     outline: none;
-    border-bottom: solid 2px #d65a31;
-    color: #000033;
-    background-color: #eeeeee;
+    border-bottom: solid 2px var(--primary-color);
+    color: var(--dark-color);
+    background-color: var(--light-color);
     }
 
 input + label {
@@ -31,19 +31,19 @@ textarea {
     width: 100%;
     padding: .25rem;
     font-size: 1.25rem;
-    background-color: #000033;
-    color: #eeeeee;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     border: 0;
-    border-top: solid 1px #eeeeee;
-    border-left: solid 1px #eeeeee;
+    border-top: solid 1px var(--light-color);
+    border-left: solid 1px var(--light-color);
 }
 
 textarea:focus {
     outline: none;
-    color: #000033;
-    background-color: #eeeeee;
-    border-left: solid 2px #d65a31;
-    border-top: solid 2px #d65a31
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    border-left: solid 2px var(--primary-color);
+    border-top: solid 2px var(--primary-color)
 }
 
 input[type="submit"],
@@ -52,8 +52,8 @@ input[type="button"],
 button {
     font-size: 1.25rem;
     padding: .25rem 2rem;
-    background-color: #d65a31;
+    background-color: var(--primary-color);
     border: solid 1px #a62a01;
-    color: white;
+    color: var(--light-color);
     font-weight: 500;
 }
