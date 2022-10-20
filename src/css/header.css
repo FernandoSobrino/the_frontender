@@ -1,19 +1,14 @@
 .header {
-    height: 100vh;
-    padding: 30px;
-
-    background: url('../img/bg.jpg') center center no-repeat;
+    background: url('../img/bg.jpg') bottom center;
     background-size: cover;
+    height: 100vh;
+    padding-top: 65px;
     position: relative;
     z-index: 30;
 }
 
 .header-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     background-color: black;
     opacity: .5;
     background: url("../img/simple-pattern-overlay.png") top left repeat;
@@ -22,22 +17,30 @@
 
 .header-content {
     position: absolute;
-    padding: 2rem;
     z-index: 32;
+    padding: 2rem;
 }
 
 .header-content>h1 {
     text-align: center;
+    margin: 0;
+    padding: 0 0 1.25rem 0;
+}
+
+.header-content .logo,
+.header-content .logo span {
+    font-size: 2rem;
 }
 
 .header-content>.tagline {
+    margin: 1rem 1rem 1rem 0;
     text-align: center;
     font-size: 1.5rem;
 }
 
 .header-content .promo-text {
-    margin: 60% 2rem 0 2rem;
+    margin: 50% 2rem 2rem 2rem;
     background-color: rgba(255, 255, 255, .25);
-    padding: 2rem;
-    text-shadow: black 1px 1px;
+    padding: 2rem 2rem;
+    text-shadow: black 2px 2px 2px;
 }
