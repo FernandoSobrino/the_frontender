@@ -2,13 +2,17 @@
     background: url('../img/bg.jpg') bottom center;
     background-size: cover;
     height: 100vh;
-    padding-top: 65px;
+    padding: 40px;
     position: relative;
     z-index: 30;
 }
 
 .header-overlay {
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: black;
     opacity: .5;
     background: url("../img/simple-pattern-overlay.png") top left repeat;
@@ -17,29 +21,26 @@
 
 .header-content {
     position: absolute;
-    z-index: 32;
     padding: 2rem;
+    z-index: 32;
 }
 
 .header-content>h1 {
     text-align: center;
-    margin: 0;
-    padding: 0 0 1.25rem 0;
-}
-
-.header-content .logo,
-.header-content .logo span {
-    font-size: 2rem;
+    border-bottom: solid 1px var(--primary-color);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .header-content>.tagline {
-    margin: 1rem 1rem 1rem 0;
+    margin: 0;
+    padding-top: 1rem;
     text-align: center;
     font-size: 1.5rem;
 }
 
 .header-content .promo-text {
-    margin: 50% 2rem 2rem 2rem;
+    margin: 50% 2rem 0 2rem;
     background-color: rgba(255, 255, 255, .25);
     padding: 2rem 2rem;
     text-shadow: black 2px 2px 2px;
