@@ -5,11 +5,11 @@ body {
 }
 
 .wrapper {
-  height: 100vh;        
+    height: 100vh;
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     top: 2rem;
     left: .5rem;
     font-size: 1.5rem;
@@ -42,15 +42,15 @@ h1 {
 }
 
 .countdown {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 
 }
 
 .countdown .time {
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
     padding: 1rem;
-    margin: 0 10px 0 0;
 }
 
 .countdown .time .number {
@@ -69,4 +69,22 @@ h1 {
 #subscribe-form .email {
     margin-right: 1rem;
     width: 56%;
-} 
+}
+
+@media all and (min-width: 480px) {
+    .wrapper {
+        max-width: var(--content-max-width);
+        margin: 0 auto;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .header {
+        max-width: var(--content-max-width);
+        position: relative;
+    }
+
+
+}
