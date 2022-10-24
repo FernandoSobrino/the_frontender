@@ -29,7 +29,12 @@ body {
 h1 {
     margin-top: 2rem;
     font-size: 3rem;
-}
+    text-shadow: black 2px 2px 2px,
+                black -2px -2px 2px,
+                black 2px -2px 2px,
+                black -2px 2px 2px;
+                }
+
 
 .main {
     padding: 150px 1rem 1rem 1rem;
@@ -57,6 +62,11 @@ h1 {
     font-size: 3rem;
 }
 
+.countdown .time .label {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
 .aside-form {
     padding: 0 1rem;
 }
@@ -69,6 +79,30 @@ h1 {
 #subscribe-form .email {
     margin-right: 1rem;
     width: 56%;
+}
+
+.video-background {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../img/simple-pattern-overlay.png') top left repeat;
+    z-index: -2;
 }
 
 @media all and (min-width: 480px) {
@@ -86,5 +120,10 @@ h1 {
         position: relative;
     }
 
+    .header .logo {
+        position: relative;
+        top: 2rem;
+        left: .5rem;
+    }
 
 }
